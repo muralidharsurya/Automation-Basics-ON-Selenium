@@ -31,7 +31,7 @@ public class Acttime_Assignment {
 		Thread.sleep(2000);
 		String actualName=driver.findElement(By.xpath("//div[text()='Suryaram']")).getText();
 		
-		String exepectedName="Suryaram";
+		 String exepectedName="Suryaram";
 		if(actualName.equals(exepectedName)) {
 			System.out.println("Acount Creted sucessfully ");
 		}else {
