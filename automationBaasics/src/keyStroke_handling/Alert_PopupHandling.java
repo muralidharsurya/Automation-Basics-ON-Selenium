@@ -22,12 +22,12 @@ public class Alert_PopupHandling {
 		 driver.findElement(By.xpath("(//input[@type='button'])[1]")).click();
 		  
 	 Alert alt=driver.switchTo().alert();
-	 //alt.accept();
+	 alt.accept();
 	// alt.dismiss();
-	 String str=alt.getText();
-	 System.out.println(str);
-		 
-	 driver.close();
+//	 String str=alt.getText();
+//	 System.out.println(str);
+//		 
+	 //driver.close();
 	}
 
 }

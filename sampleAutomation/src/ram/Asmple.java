@@ -1,6 +1,11 @@
 package ram;
 
+import java.io.FileInputStream;
+import java.time.Duration;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Asmple {
@@ -21,7 +26,5 @@ public class Asmple {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//div[text()='Price -- High to Low']")).click();
 		Thread.sleep(4000);
-	
-	}
-
-}
+		
+	}}

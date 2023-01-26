@@ -19,9 +19,10 @@ public class Hidden_visonPopupHandling {
 		 driver.manage().window().maximize();
 		 driver.findElement(By.xpath("//input[@id='username']")).sendKeys("admin",Keys.TAB,"manager",Keys.ENTER);
 		 driver.findElement(By.xpath("//div[@id='container_tasks']")).click();
-		 //Thread.sleep(3000);
+		 //Thread     .sleep(3000);
 		 WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='img'])[1]"))).click();
+	 WebElement ele=   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='img'])[1]")));
+	 ele.click();
 	  	 driver.findElement(By.xpath("//div[@class='delete button']")).click();
 		//WebElement ele= driver.findElement(By.xpath("//div[contains(text(),'You are about to d')]"));
 	

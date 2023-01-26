@@ -29,6 +29,6 @@ for(WebElement elements : productNmaes) {
 	System.out.println(elements.getText());
 	
 }
-driver.quit();
+     //driver.quit();
 
 	}}
